@@ -1,0 +1,42 @@
+h2 {
+    margin: 0;
+}
+
+form {
+    label,
+    input {
+        display: block;
+    }
+    
+    input,
+    textarea {
+        font-weight: 300;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.5rem 0;
+        border: none;
+        border-radius: $radius-sm;
+    }
+
+    label {
+        margin-top: $spacing-base;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        text-indent: 0.5rem;
+    }
+
+    textarea {
+        display: block;
+    }
+
+    input[type="submit"] {
+        width: 10rem;
+        margin-top: $spacing-base;
+        padding: $spacing-base;
+        cursor: pointer;
+    }
+}

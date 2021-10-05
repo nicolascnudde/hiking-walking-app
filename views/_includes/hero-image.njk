@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<h1>{{ title }}</h1>
+
+<div class="display-image--wide">
+    <img class="image--rounded" src="/assets/img/features/{{ featured_image }}" alt="{{ title }}">
+</div>
+
+<section class="features">
+
+    {{ content | safe }}
+    
+</section>

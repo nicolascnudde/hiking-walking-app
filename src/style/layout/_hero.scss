@@ -1,0 +1,32 @@
+.hero {
+    &__container {
+    margin-top: $spacing-base;
+    display: flex;
+    align-items: center;
+    }
+
+    small {
+        display: block;
+        margin-top: 1.5rem;
+    }
+    
+    h3,
+    p {
+        margin: 0.5rem 0 0;
+    }
+
+    &__image {
+        flex-basis: 60%;
+    }
+
+    &__content {
+        flex-basis: 40%;
+        margin-left: $spacing-base;
+        
+        &__article {
+            border-bottom: 1px solid $secondary;
+            padding-bottom: 0.5rem;
+        }
+    
+    }
+}

@@ -1,0 +1,41 @@
+<div class="feature__container">
+    <div class="feature__img">
+        <img src="/assets/img/features/{{ screen_image }}" alt="{{ title }}">
+    </div>
+
+    <ul class="feature__content">
+        {% if title == 'User Friendly' %}
+            {% for info in feature_user_friendly %}
+                <li>
+                    <i class="fas fa-check"></i>
+
+                    <h3>{{ info.title }}</h3>
+
+                    <p> {{ info.description }}</p>
+                </li>
+            {% endfor %}
+
+        {% elseif title == 'GPS' %}
+            {% for info in feature_gps %}
+                <li>
+                    <i class="fas fa-check"></i>
+
+                    <h3>{{ info.title }}</h3>
+
+                    <p> {{ info.description }}</p>
+                </li>
+            {% endfor %}
+
+        {% elseif title == 'Community' %}
+            {% for info in feature_community %}
+                <li>
+                    <i class="fas fa-check"></i>
+
+                    <h3>{{ info.title }}</h3>
+
+                    <p> {{ info.description }}</p>
+                </li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+</div>

@@ -1,0 +1,30 @@
+.feature {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $spacing-md;
+        border-radius: $radius-sm;
+    }
+
+    &__img {
+        flex-basis: 50%;
+        text-align: center;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    &__content {
+        flex-basis: 50%;
+
+        article {
+            margin-top: 2rem;
+        }
+        
+        h3 {
+            margin-left: 0.5rem;
+            display: inline;
+        }
+    }
+}

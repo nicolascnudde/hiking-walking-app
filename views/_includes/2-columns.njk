@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+<h1>{{ title }}</h1>
+
+<section class="two-columns">
+    <div class="two-columns__container">
+        <div class="two-columns__img">
+            <img class="image--rounded" src="/assets/img/{{ image }}" alt="{{ title }}">
+        </div>
+
+        <div class="two-columns__content">
+
+            {{ content | safe }}
+
+        </div>
+    </div>
+</section>

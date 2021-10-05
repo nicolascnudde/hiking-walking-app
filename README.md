@@ -1,1 +1,3 @@
-# hiking-walking-app
+# My Walking App
+
+Dit is mijn walking app!

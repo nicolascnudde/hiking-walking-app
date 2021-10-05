@@ -1,0 +1,21 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPassthroughCopy({
+    'src/main.css': 'assets/main.css',
+    'src/images': 'assets/img',
+    'src/js': 'assets/js'
+  });
+
+  eleventyConfig.addFilter('featured', function(blog) {
+    return blog.filter(article => article.data.featured == true);
+  });
+
+  return {
+    dir: {
+      input: 'views',
+      output: 'docs'
+    }
+  };
+};

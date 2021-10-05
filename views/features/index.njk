@@ -1,0 +1,18 @@
+---
+title: Features
+layout: base
+tags: 
+eleventyNavigation:
+    key: Features
+    order: 2
+---
+
+<h1>{{ title }}</h1>
+
+<section class="features">
+    <ul class="features__list">
+        {% for feature in collections.features %}
+            {% include '_components/features_summary.njk'%}
+        {% endfor %}
+    </ul>
+</section>

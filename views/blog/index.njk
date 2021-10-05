@@ -1,0 +1,18 @@
+---
+layout: base
+title: Blog
+tags: 
+eleventyNavigation:
+    key: Blog
+    order: 3
+---
+
+<h1>Blog</h1>
+
+<section class="blog blog-page">
+    <ul class="blog__list">
+        {% for post in collections.blog %}
+            {% include '_components/blog_posts.njk' %}
+        {% endfor %}
+    </ul>
+</section>

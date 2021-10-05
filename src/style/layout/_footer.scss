@@ -1,0 +1,62 @@
+.footer {
+    background: $secondary;
+    color: $primary;
+    margin-top: $spacing-lg;
+
+    span {
+        display: block;
+        font-weight: 500;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        flex-basis: 50%;
+    }
+
+    &__menu {
+        .navbar {
+            &__list {
+                li a {
+                    display: inline-block;
+                    margin: 0.25rem 0;
+                    color: $primary;
+                    font-weight: 300;
+                    text-decoration: none;
+                    background: 
+                        linear-gradient(currentColor 0 0) 
+                        0 100% /var(--d, 0) 1px 
+                        no-repeat;
+                    transition: 0.4s ease;
+                    padding-bottom: 0.1rem;
+                }
+
+                li a:hover {
+                    --d: 100%;
+                }
+
+                &__children {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__socials {
+        i {
+            margin-top: $spacing-base;
+            margin-right: 0.25rem;
+            font-size: $text-md;
+            transform: translateY(0);
+            transition: all 0.2s ease;
+            color: $primary;
+        }
+
+        i:hover {
+            transform: translateY(-0.25rem);
+        }
+    }
+}

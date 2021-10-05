@@ -1,0 +1,35 @@
+<footer class="footer">
+    <div class="footer__container wrapper">
+        <section class="footer__info">
+            <span>{{ site.title }} © {{ helpers.currentYear() }}</span>
+
+            <p>A Hiking and walking app</p>
+
+            <p>vamos! is your guide to the outdoors! Discover the best hiking and walking trails around the world.</p>
+        </section>
+
+        <section class="footer__menu">
+            <nav class="navbar">
+                <span>Navigation</span>
+                
+                {% include "_components/main_menu.njk" %}
+            </nav>
+        </section>
+
+        <section class="footer__socials">
+                <span>Follow us</span>
+
+                <a href="http://www.facebook.com/vamosapp" target=”_blank” rel=”noreferrer noopener“><i class="fab fa-facebook-square"></i></a>
+
+                <a href="http://www.twitter.com/vamosapp" target=”_blank” rel=”noreferrer noopener“><i class="fab fa-twitter"></i></a>
+
+                <a href="http://www.instagram.com/vamosapp" target=”_blank” rel=”noreferrer noopener“><i class="fab fa-instagram"></i></a>
+
+                <a href="http://www.youtube.com/vamosapp" target=”_blank” rel=”noreferrer noopener“><i class="fab fa-youtube"></i></a>
+        </section>
+    </div>
+
+    <button id="scrollToTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</footer>

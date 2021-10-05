@@ -1,0 +1,21 @@
+.team {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        
+        li {
+            flex-basis: 30%;
+            margin-bottom: $spacing-base;
+            padding: $spacing-base 1%;
+            background: $secondary;
+            color: $primary;
+            border-radius: $radius-md;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.btn {
+    &--primary {
+        padding: $spacing-base 1.5rem;
+        background-color: transparent;
+        color: $secondary;
+        border: 1px solid $secondary;
+        border-radius: $radius-lg;
+        cursor: pointer;
+        transition: all .4s ease;
+    }
+
+    &--primary:hover {
+        padding: $spacing-base 2.5rem;
+        background-color: $secondary;
+        color: $primary;
+    }
+
+    &--secondary {
+        padding: 0.75rem;
+        background-color: $secondary;
+        color: $primary;
+        border: 1px solid $secondary;
+        border-radius: $radius-sm;
+        cursor: pointer;
+        transform: translateY(0);
+        transition: all .4s ease;
+    }
+
+    &--secondary:hover {
+        background-color: transparent;
+        color: $secondary;
+        transform: translateY(-0.25rem)
+    }
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    right: $spacing-base;
+    bottom: $spacing-base;
+    padding: 0.75rem;
+    background: $secondary;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: $radius-md;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#scrollToTopBtn:hover {
+    background: $primary;
+    color: $secondary;
+    border: 1px solid $secondary;
+}

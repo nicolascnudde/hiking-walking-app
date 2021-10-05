@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Gary Whitney",
+        "image": "gary.jpg",
+        "age": "31",
+        "title": "CEO"
+    },
+    {
+        "name": "Carter Rhodes",
+        "image": "carter.jpg",
+        "age": "29",
+        "title": "Engineering Manager"
+    },
+    {
+        "name": "Lauren Weston",
+        "image": "lauren.jpg",
+        "age": "25",
+        "title": "Director of Operations"
+    },
+    {
+        "name": "Maja Garner",
+        "image": "maja.jpg",
+        "age": "27",
+        "title": "Software Engineer"
+    },
+    {
+        "name": "Laura Moore",
+        "image": "laura.jpg",
+        "age": "28",
+        "title": "Marketing Specialist"
+    },
+    {
+        "name": "Adam Hughes",
+        "image": "adam.jpg",
+        "age": "23",
+        "title": "Cartographer"
+    }
+]

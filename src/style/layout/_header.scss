@@ -1,0 +1,52 @@
+.header {    
+    background: $secondary;
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &__logo > img {
+            width: 10rem;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+
+            li a {
+                display: block;
+                padding: $spacing-base;
+                color: $primary;
+                text-decoration: none;
+                border-radius: $radius-sm;
+                
+                &:hover {
+                    color: $secondary;
+                    background-color: $primary;
+                }
+            }
+            
+            li ul {
+                display: none;
+                position: absolute;
+                z-index: 1;
+                background-color: $secondary;
+                border-radius: $radius-sm;
+
+                li {
+                    text-align: left;
+                }
+            }
+
+            li:hover ul {
+                display: block;
+            }
+        }
+
+        [aria-current] {
+            font-weight: 500;
+        }
+    }
+}
