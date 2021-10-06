@@ -1,8 +1,8 @@
-## Ghent Festival
+## Hiking/Walking App
 
 This assignment consisted of coding a couple of pages to promote a walking/hiking app that we designed earlier (wireframes and visual design in Adobe XD).
 
-Most data was coded dynamically by using Eleventy's data.
+Most of the content was coded dynamically by using Eleventy's data.
 
 
 ### Built With
